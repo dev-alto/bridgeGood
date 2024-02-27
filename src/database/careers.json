@@ -1,6 +1,22 @@
 {
+    "Graphic Designer": {
+        "description": "Graphic Designer Career Path offers a simple, intuitive roadmap to guide you step by step. From mastering design fundamentals to specializing in areas like branding and web design, our curriculum equips you with the skills needed to succeed.",
+        "milestones": 10,
+        "salary": "$56,762 - $102,628"
+    },
     "Software Engineer": {
-        "description": "",
-        "salary": "100"
+        "description": "Software engineers apply engineering principles and knowledge of programming languages to build software solutions for end users.",
+        "milestones": 14,
+        "salary": "$78,251 - $140,216"
+    },
+    "Game Developer": {
+        "description": "A video game developer is a software developer specializing in video game development – the process and related disciplines of creating video games.",
+        "milestones": 19,
+        "salary": "$61,651 - $121,347"
+    },
+    "Information Technician": {
+        "description": "An IT technician, or information technology technician, helps organizations with computer systems. They provide support to employees, customers, or both.",
+        "milestones": 8,
+        "salary": "$59,651 - $91,587"
     }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import ProjectCard from '@/components/projectCard.component';
-import CareerPathwayCard from '@/components/careerPathwayCard.component';
+import Projects from '../database/projects.json';
 
 const ProfileBody = () => {
   return (
@@ -35,9 +35,10 @@ const ProfileBody = () => {
         </div>
 
         <div className="flex gap-4">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard /> 
+          {Object.entries(Projects).map(([projectName]) =>
+          (
+            <ProjectCard projectName={projectName}/>
+          ))}
         </div>
       </div>
     </div>

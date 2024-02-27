@@ -1,6 +1,8 @@
 {
-    "Software": "",
-    "Web Design": "",
+    "Software": { "icon": "", "color": "" },
+    "Digital Art": { "icon": "", "color": "" },
+    "Web Design": { "icon": "", "color": "" },
     "User Experience": "",
-    "User Interface": ""
+    "User Interface": "",
+    "Game Developmentt": ""
 }

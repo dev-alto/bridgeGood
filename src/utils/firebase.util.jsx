@@ -6,6 +6,13 @@ import {
   GoogleAuthProvider, 
   signOut, 
   onAuthStateChanged } from "firebase/auth";
+import {
+  getFirestore,
+  doc,
+  getDoc, 
+  setDoc,
+  getDocs
+} from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -37,3 +44,29 @@ export const signInWithGooglePopup = () => signInWithPopup(auth, googleAuthProvi
 export const signOutUser = async () => await signOut(auth);
 
 export const onAuthStateChangedListener = (callback) => onAuthStateChanged(auth, callback);
+
+export const db = getFirestore();
+
+export const createUserDocFromAuth = async (userAuth, additionalInfo={}) => {
+  const userDocRef = doc(db, 'users', userAuth.uid);
+
+  const userSnapshot = await getDoc(userDocRef);
+
+  if (!userSnapshot.exists()) {
+    const { displayName, email } = userAuth;
+    const createdAt = new Date();
+
+    try {
+      await setDoc(userDocRef, {
+        displayName,
+        email,
+        createdAt,
+        ...additionalInfo
+      })
+    } catch (error) {
+      console.log("Error creating User, ", error.message);
+    }
+  }
+
+  return userDocRef;
+}

@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": true
+            },
+            "previewLimit": 50,
+            "server": "ep-still-snowflake-a6cpzwql.us-west-2.aws.neon.tech",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Uplink",
+            "database": "impactdb",
+            "username": "lancearnel1435",
+            "password": "t9v5IalLCeQh"
+        }
+    ]
+}

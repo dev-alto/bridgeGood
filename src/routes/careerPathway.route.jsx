@@ -5,6 +5,7 @@ import Footer from '@/components/footer.component';
 
 const CareerPathwayBody = () => {
   return (
+    <div>
     <div className="max-w-[1240px] mx-auto">
       <div>
         <div className="flex justify-start items-center gap-[100px] mt-[50px]">
@@ -28,17 +29,24 @@ const CareerPathwayBody = () => {
           <CareerPathwayCard />
           <CareerPathwayCard />
           <CareerPathwayCard />
+          <CareerPathwayCard />
+          <CareerPathwayCard />
+          <CareerPathwayCard />
+          <CareerPathwayCard />
+          <CareerPathwayCard />
         </div>
-        <div className="w-full bg-[#E0DEFF] mt-[40px] pb-[20px]">
-          <div className="max-w-[1240px] mx-auto text-center">
-            <h1 className="text-[48px] font-bold">Not sure <span className="text-[#FF0000]">where to start?</span></h1>
-            <p className="capitalize font-bold text-[16px] tracking-wide">TAKE OUR SURVEY</p>
-            <button className="px-[50px] py-[15px] bg-[#242E6B] rounded-[3px] text-white mt-[17px]">Find your Career</button>
-          </div>
-        </div>
-        <Footer />
+        
       </div>
     </div>
+    <div className="w-full bg-[#E0DEFF] mt-[40px] pb-[20px]">
+    <div className="max-w-[1240px] mx-auto text-center">
+      <h1 className="text-[48px] font-bold">Not sure <span className="text-[#FF0000]">where to start?</span></h1>
+      <p className="capitalize font-bold text-[16px] tracking-wide">TAKE OUR SURVEY</p>
+      <button className="px-[50px] py-[15px] bg-[#242E6B] rounded-[3px] text-white mt-[17px]">Find your Career</button>
+    </div>
+  </div>
+  <Footer />
+  </div>
   )
 }
 

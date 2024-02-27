@@ -1,7 +1,26 @@
 {
     "Roblox Indie Game Development": {
-        "description": "cool beans",
-        "tags": ["Game Development", "Project Management"],
+        "description": "Developed a high-class game amongst a small indie game development studio. Written using Lua+u and with 3D models designed in Blender.",
+        "image": "/assets/project1.png",
+        "tags": ["Game Development", "Project Management", "Blender", "Lua"],
+        "github": "https://www.github.com"
+    },
+    "Fluid Physics Simulation": {
+        "description": "An experiment written using C++ in the Processing engine that simulates realistic soft and hard bodies.",
+        "image": "/assets/project2.jpg",
+        "tags": ["Blender"],
+        "github": "https://www.github.com"
+    },
+    "Frontend Web Development": {
+        "description": "An experiment written using C++ in the Processing engine that simulates realistic soft and hard bodies.",
+        "image": "/assets/project3.jpeg",
+        "tags": ["React"],
+        "github": "https://github.com/Skyline-College-Computer-Science-Club/project.ClubWebsite"
+    },
+    "p5.js Boid Flocking Simulation": {
+        "description": "2D visual art depicting simple yet dynamically fascinating flocking behaviors in the medium of p5.js rendering.",
+        "image": "/assets/project4.jpg",
+        "tags": ["2D Design", "Frontend Web Development"],
         "github": "https://www.github.com"
     }
 }
